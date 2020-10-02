@@ -16,8 +16,8 @@ store.dogs.forEach(dog => pets.dogs.enqueue(dog))
 
 module.exports = {
   all() {
-    let cats = store.cats.all()
-    let dogs = store.dogs.all()
+    let cats = pets.cats.all()
+    let dogs = pets.dogs.all()
     return cats.concat(dogs)
     // call all to grab all pets for '/'
     // return both cats and dogs concat()

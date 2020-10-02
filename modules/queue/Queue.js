@@ -46,6 +46,10 @@ class Queue {
     return this.first.value
   }
 
+  peek = () => {
+    return this.last.value;
+  };
+
   all() {
     // Return all items in the queue.
     let arr = []

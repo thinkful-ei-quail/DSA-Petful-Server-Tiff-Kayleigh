@@ -1,5 +1,5 @@
 const express = require('express')
-const json = require('body-parser').json()
+const json = express.json()
 
 const Pets = require('./pets.service')
 const People = require('../people/people.service')
@@ -8,7 +8,8 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   // Return all pets currently up for adoption.
-  res.json(Pets.all(''))
+  res.json(Pets.all())
+  res.json(People.get())
 })
 
 router.get('/cat', (req, res) => {
