@@ -32,7 +32,7 @@ class Queue {
       return
     }
 
-    const node = this.first
+    const node = this.last
     this.first = this.first.next
     // if this is the last item in the queue
     if (node === this.last) {
@@ -43,7 +43,7 @@ class Queue {
 
   show() {
     // Return the next item in the queue.
-    return this.last.value
+    return this.first.value
   }
 
   all() {
