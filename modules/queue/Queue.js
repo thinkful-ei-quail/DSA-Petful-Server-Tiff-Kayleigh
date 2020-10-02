@@ -23,6 +23,7 @@ class Queue {
     }
     //make the new node the last item on the queue
     this.last = node;
+    return node.value
   }
 
   dequeue() {
@@ -32,7 +33,7 @@ class Queue {
       return
     }
 
-    const node = this.last
+    const node = this.first
     this.first = this.first.next
     // if this is the last item in the queue
     if (node === this.last) {
@@ -60,6 +61,21 @@ class Queue {
     }
     return arr
   }
+
+  // all() {
+  //   const values = []
+  //   let finished = false
+  //   let current = this.first
+  //   while (finished === false) {
+  //     if (current === null) {
+  //       finished = true
+  //       break
+  //     }
+  //     values.push(current.value)
+  //     current = current.next
+  //   }
+  //   return values
+  // }
 }
 
 module.exports = Queue

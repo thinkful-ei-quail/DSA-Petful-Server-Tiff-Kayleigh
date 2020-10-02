@@ -22,7 +22,6 @@ module.exports = {
 
   enqueue(person) {
     // Add a person to the queue.
-    console.log('ENQUEUE', people.peek())
     return people.enqueue(person)
   },
 
