@@ -18,6 +18,9 @@ router.post('/', json, (req, res) => {
   res.json(person)
 })
 
-
+router.delete('/', json, (req, res) => {
+  // Removes person and adopts pet...
+  res.json(PeopleService.dequeue())
+})
 
 module.exports = router
