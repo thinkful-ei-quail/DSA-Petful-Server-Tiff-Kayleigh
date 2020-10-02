@@ -1,3 +1,5 @@
+'use strict'
+
 const app = require('./modules/app/app')
 const port = process.env.PORT || 8000
 

@@ -15,11 +15,22 @@ store.dogs.forEach(dog => pets.dogs.enqueue(dog))
 // --------------------
 
 module.exports = {
-  get() {
+  all() {
+    let cats = store.cats.all()
+    let dogs = store.dogs.all()
+    return cats.concat(dogs)
+    // call all to grab all pets for '/'
+    // return both cats and dogs concat()
+  },
+
+  get(type) {
     // Return the pets next in line to be adopted.
+    // ie: pets["cats"].show or "dogs"
+    return pets[type].show()
   },
 
   dequeue(type) {
     // Remove a pet from the queue.
+    return pets[type].dequeue()
   }
 }
