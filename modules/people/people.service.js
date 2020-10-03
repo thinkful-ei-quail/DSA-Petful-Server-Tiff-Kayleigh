@@ -15,11 +15,6 @@ module.exports = {
     return people.all()
   },
 
-  /* store.forEach(user => peopleQueue.enqueue(user));
-       const users = peopleQueue.display();
-       res.json(users);
-  */
-
   enqueue(person) {
     // Add a person to the queue.
     return people.enqueue(person)

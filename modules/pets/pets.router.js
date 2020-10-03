@@ -14,23 +14,23 @@ router.get('/', (req, res) => {
 
 router.get('/cat', (req, res) => {
   // Return spec cat currently up for adoption.
-  res.json(Pets.get('cats'))
+  res.status(200).json(Pets.get('cats'))
 })
 
 
 router.get('/dog', (req, res) => {
   // Return spec dog currently up for adoption.
-  res.json(Pets.get('dogs'))
+  res.status(200).json(Pets.get('dogs'))
 })
 
 router.delete('/cat', json, (req, res) => {
   // Removes pet and adopts pet...
-  res.json(Pets.dequeue('cats'))
+  res.status(204).json(Pets.dequeue('cats'))
 })
 
 router.delete('/dog', json, (req, res) => {
   // Removes pet and adopts pet...
-  res.json(Pets.dequeue('dogs'))
+  res.status(204).json(Pets.dequeue('dogs'))
 })
 
 module.exports = router
