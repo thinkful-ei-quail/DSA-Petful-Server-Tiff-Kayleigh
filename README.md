@@ -1,9 +1,7 @@
 # Petful Server  
 ### by Tiffany Summerford and Kayleigh Young   
 [Petful Adoption](https://petful-client-peach.vercel.app/) ||
-
 [Client](https://github.com/thinkful-ei-quail/DSA-Petful-Client-kay-tiff) ||
-
 [Server](https://github.com/thinkful-ei-quail/DSA-Petful-Server-Tiff-Kayleigh)  
  
 
