@@ -24,7 +24,7 @@ class Queue {
     //make the new node the last item on the queue
     this.last = node;
     return node.value
-  }
+  };
 
   dequeue() {
     // Remove some data from the queue.
@@ -40,12 +40,12 @@ class Queue {
       this.last = null
     }
     return node.value
-  }
+  };
 
   show() {
     // Return the next item in the queue.
     return this.first.value
-  }
+  };
 
   peek = () => {
     return this.last.value;
@@ -60,7 +60,7 @@ class Queue {
       node = node.next
     }
     return arr
-  }
+  };
 
   // all() {
   //   const values = []
