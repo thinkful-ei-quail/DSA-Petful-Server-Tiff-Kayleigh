@@ -14,7 +14,9 @@ router.get('/', (req, res) => {
 router.post('/', json, (req, res) => {
   // Add a new person to the queue.
   let {person} = xss(req.body)
-  People.enqueue(person)
+  let newPerson = JSON.stringify({person})
+  People.enqueue(newPerson)
+  console.log('new', newPerson)
   res.status(201).json(People.get())
 })
 
