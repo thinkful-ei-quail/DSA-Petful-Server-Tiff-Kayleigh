@@ -16,6 +16,7 @@ router.post('/', json, (req, res) => {
   
   // const { person } = req.body
   // People.enqueue(person)
+  // res.json(person)
 
   let person = xss(req.body)
   res.json(People.enqueue(person))
