@@ -24,7 +24,7 @@ module.exports = {
   },
 
   get(type) {
-    // Return the pets next in line to be adopted.
+    // Return the pets next in line to be adopted
     // ie: pets["cats"].show or "dogs"
     return pets[type].show();
   },
