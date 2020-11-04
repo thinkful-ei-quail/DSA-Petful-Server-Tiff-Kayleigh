@@ -1,7 +1,7 @@
 const Queue = require('../queue/Queue');
 const store = require('../../store');
 
-// Set up initial data.
+// Set up initial data
 // --------------------
 
 const pets = {
@@ -30,7 +30,7 @@ module.exports = {
   },
 
   dequeue(type) {
-    // Remove a pet from the queue.
+    // Remove a pet from the queue
     return pets[type].dequeue();
   }
 };
