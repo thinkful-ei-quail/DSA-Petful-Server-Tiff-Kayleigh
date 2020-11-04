@@ -20,7 +20,7 @@ module.exports = {
     let dogs = pets.dogs.all();
     return cats.concat(dogs);
     // call all to grab all pets for '/'
-    // return both cats and dogs concat()
+    // return both cats and dogs concat() 
   },
 
   get(type) {
