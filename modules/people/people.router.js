@@ -17,7 +17,7 @@ router.post('/', json, (req, res) => {
 })
 
 router.delete('/', json, (req, res) => {
-  // Removes person
+  // Removes person //
   res.status(204).json(People.dequeue())
 })
 
