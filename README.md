@@ -13,7 +13,7 @@ FIFO Adoption is an adoption agency app that uses singly linked lists to adopt o
 The GET '/people' endpoint is designed to GET adoptees names from the server.
 ```json
 {
-    "["Jane Doe"]"
+    `["Jane Doe"]`
 }
 ```
 Successful GET's return a `200 OK`.  
@@ -37,7 +37,7 @@ Successful GET's return a `200 OK`.
 The DELETE '/people' endpoint is designed to remove adoptees from the list.
 ```json
 {
-    "["Jane Doe"]"
+    `["Jane Doe"]`
 }
 ```
 Successful DELETE's return a `204 OK`.  
@@ -63,7 +63,7 @@ Successful DELETE's return a `204 OK`.
 The POST '/people' endpoint is designed to add new adoptees to the server. Once somebody is signed up, a cat or dog is adopted every 5 seconds, until it's the adoptees turn to go.  
 ```json
 {
-    "["Jane Doe"]"
+    `["Jane Doe"]`
 }
 ```
 Successful POST's return a `201 OK`.  
